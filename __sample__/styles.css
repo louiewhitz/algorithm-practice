@@ -27,3 +27,7 @@ p {
 code {
   font-family: "Source Code Pro", monospace;
 }
+
+li {
+  list-style-type: none;
+}
