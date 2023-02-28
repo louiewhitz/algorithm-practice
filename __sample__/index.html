@@ -74,11 +74,32 @@ A 1-interesting polygon is just a square with a side of length 1. An n-interesti
       </p>
       <p><pre><code class="strictSequence"></code></pre></p>
     </div>
+    <div class="container">
+      <h2>Find Smallest Integer</h2>
+      <p>Given an array of integers your solution should find the smallest integer.
+
+        For example:
+        
+        Given [34, 15, 88, 2] your solution will return 2
+        Given [34, -345, -1, 100] your solution will return -345
+        You can assume, for the purpose of this kata, that the supplied array will not be empty.
+        
+        
+
+      </p>
+      <p><pre><code class="smallInt"></code></pre></p>
+    </div>
   
       
    
       
-      
+    <script>
+      fetch('/solutions/smallest-integer.js')
+   .then(response => response.text())
+   .then(code => {
+          document.querySelector('.smallInt').innerHTML = code;
+   });
+    </script>
 
     <script>
      fetch('/solutions/add-two.js')
@@ -151,6 +172,7 @@ A 1-interesting polygon is just a square with a side of length 1. An n-interesti
     <script src="../solutions/leet-twosum.js"></script>
     <script src="../solutions/adjacent-el-prod.js"></script>
     <script src="../solutions/strict-sequence.js"></script>
+    <script src="../solutions/smallest-integer.js"></script>
 
   </body>
 </html>
