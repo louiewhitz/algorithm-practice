@@ -89,16 +89,31 @@ A 1-interesting polygon is just a square with a side of length 1. An n-interesti
       </p>
       <p><pre><code class="smallInt"></code></pre></p>
     </div>
+    <div class="container">
+      <h2>Trolls are attacking your comment section!</h2>
+      <p>A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+        Your task is to write a function that takes a string and return a new string with all vowels removed.
+        
+        For example, the string 'This website is for losers LOL!' would become 'Ths wbst s fr lsrs LL!'.
+        
+        Note: for this kata y isn't considered a vowel.
+        
+        
+
+      </p>
+      <p><pre><code class="disemvowl"></code></pre></p>
+    </div>
   
       
    
       
     <script>
       fetch('/solutions/smallest-integer.js')
-   .then(response => response.text())
-   .then(code => {
+  .then(response => response.text())
+  .then(code => {
           document.querySelector('.smallInt').innerHTML = code;
-   });
+  });
     </script>
 
     <script>
@@ -165,6 +180,14 @@ A 1-interesting polygon is just a square with a side of length 1. An n-interesti
            document.querySelector('.strictSequence').innerHTML = code;
   });
     </script>
+
+    <script>
+      fetch('/solutions/disemvowel.js')
+        .then(response => response.text())
+        .then(code => {
+          document.querySelector('.disemvowl').innerHTML = code;
+  });
+    </script>
     <script src="../solutions/add-two.js"></script>
     <script src="../solutions/shape-area.js"></script>
     <script src="../solutions/century-from-year.js"></script>
@@ -173,6 +196,7 @@ A 1-interesting polygon is just a square with a side of length 1. An n-interesti
     <script src="../solutions/adjacent-el-prod.js"></script>
     <script src="../solutions/strict-sequence.js"></script>
     <script src="../solutions/smallest-integer.js"></script>
+    <script src="../solutions/disemvowel.js"></script>
 
   </body>
 </html>
