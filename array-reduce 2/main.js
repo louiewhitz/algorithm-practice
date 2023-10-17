@@ -37,3 +37,23 @@ const composite = traits.reduce((prev, current) => {
 }, {});
 // console.log("🚀 ~ file: main.js:38 ~ composite ~ composite:", composite);
 // Use the reduce method to sum all the deposits in the account array
+const string = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+const newString = [...string];
+console.log('🚀 ~ file: main.js:42 ~ newString:', newString);
+console.log(...string);
+
+function hello() {
+  function go(name) {
+    alert(name);
+  }
+
+  const name = 'SheCodes';
+  go(name);
+}
+
+hello();
+
+function sayHello() {
+  alert('Hello');
+}
+setTimeout(sayHello, 3000);
